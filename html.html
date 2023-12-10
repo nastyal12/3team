@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Connect</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden; 
+            background-color: #f2f2f2; 
+            color: #333;
+        }
+
+        header {
+            background-color: #bf567d; 
+            color: #ffd5e0;
+            text-align: center;
+            padding: 1em;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        nav {
+            background-color: #bf567d; 
+            padding: 0.5em;
+            text-align: center;
+        }
+
+
+        section {
+            position: relative;
+            width: 100%;
+            height: 100vh; 
+            overflow: hidden; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            z-index: -1; 
+        }
+        .button{
+            margin:5px;
+    width: 10em;
+    height: 3em;
+    border-radius:30em;
+    font-size:25px;
+    font-family: inherit;
+    border:none;
+    font-size:none;
+    position:relative;
+    cursor:pointer;
+    overflow:hidden;
+    z-index:1;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+ }
+        
+        .button::before {
+    content:'';
+    width:0;
+    height:3em;
+    border-radius:30em;
+    position:absolute;
+    top:0;
+    left:0;
+    background-image: linear-gradient(to right, #FFDADF 0%, #FEACC4 50%, #FF779E 100%);
+    transition: .5s ease;
+    display:block;
+    z-index:-1;
+
+        }
+        .button:hover::before{
+         width: 10em;
+        }
+
+        .smiley {
+            font-size: 3em;
+            margin: 1em 0; 
+        }
+
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    
+
+    </style>
+    
+</head>
+<body>
+
+    <header>
+        <h1>Love Connect</h1>
+        <p>Find your perfect match!</p>
+    </header>
+
+    <section class="fade-in">
+        <video id="video-background" autoplay loop muted>
+            <source src="./video/video.mp4" type="video/mp4">
+            
+            Your browser does not support the video tag.
+        </video>
+        <h2>Welcome to Love Connect</h2>
+        <p>Discover meaningful connections and build lasting relationships.</p>
+        <p><strong>USER ID: <input type="text" name="id" maxlength="8" size="8"></strong></p>
+    <p><strong>USER PW: <input type="password" name="pw" maxlength="8" size="8"></strong></p>
+        <div class="button"><a href="chat.html" class="button"><center>Get started</center></a></div>
+        <a href="profile.html">Forgot password</a> 
+        <a href="messages.html">Sign in</a>
+        <div class="smiley">&#128525; &#128536; &#128538;</div>
+    </section>
+
+</body>
+</html>

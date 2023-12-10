@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            padding: 7px;
+            color: #ffd5e0;
+            background-color: #bf567d;
+        }
+        header li{
+            list-style: none;
+            display: inline;
+        }
+        #container {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+        
+        
+        #profile,
+        #rec {
+            width: 48%; 
+            background-color: #ffd5e0;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            margin: 0;
+        }
+
+        #profile img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        #profile h2,
+        #rec h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        #profile p,
+        #rec p {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        #profile ul,
+        #rec ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            
+        }
+        #profile{
+            margin-right: 30px;
+        }
+        #rec{
+            margin-left: 30px;
+        }
+
+        #profile ul li{
+            font-size: 25px;
+        }
+        #rec ul li {
+            font-size: 22px;
+            margin-bottom: 5px;
+            display: flex;
+            
+        }
+        h3{
+            font-size: 22px;
+            margin-bottom: 5px;
+            margin-left: 20px;
+            font-weight: 300;
+        }
+
+
+        #profile a,
+        #rec a {
+            text-decoration: none;
+            color: #bf567d;
+            font-weight: bold;
+        }
+        #profile .sb a{
+            color: white;
+        }
+
+        #profile a:hover,
+        #rec a:hover {
+            text-decoration: underline;
+        }
+        #rec img{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+        h1{
+            font-size: 25px;
+        }
+        #profile p{
+            font-size: 25px;
+        }
+        #profile .sb{
+            background-color: #bf567d;
+            padding: 7px;
+            font-size: 25px;
+            color: white;
+            border: white;
+        }
+        #header a{
+            color: #ffd5e0;
+        }
+    
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Love Connection</h1>
+            <div id="header">
+                <ul id="main_menu">
+                    <li><a href="html.html">|Home|</a></li>
+                    <li><a href="chat.html">|My Messages|</a></li>
+                    <li><a href="myprofile.html">|My Profile|</a></li> 
+                </ul>
+            </div>
+    </header>
+
+    <div id="container">
+        <div id="profile">
+            <img src="./img/Subin.jpg" alt="Profile Picture">
+            <h2>Name: Choi Soobin</h2>
+            <p>Age: 23 yo</p>
+            <p>City: Seoul</p>
+
+            <ul>
+                <li>Height: 185cm</li>
+                <li>MBTI: ISFP</li>
+                <li>Hobby: Cooking</li>
+            </ul>
+
+            <p>About myself: I'm currently working in an office. In my free time I like to cook delishious food</p>
+
+            <p><button type="button" class="sb"><a href="#">Send a message</a></button></p>
+        </div>
+
+        <div id="rec">
+            <h2>People near you</h2>
+            <ul>
+                <li>
+                    <img src="./img/b.jpg" alt="b">
+                    <h3>Byun Baekhyun<br>
+                    1km from you</h3>
+                </li>
+                <li>
+                    <img src="./img/j.jpg" alt="j">
+                    <h3>Jeon Jungkook<br>
+                    23km from you</h3>
+                </li>
+                <li>
+                    <img src="./img/c.jpg" alt="c">
+                    <h3>Bang Christopher<br>
+                    500m from you</h3>
+                </li>
+                <li>
+                    <img src="./img/y.jpg" alt="y">
+                    <h3>Min Yoongi<br>
+                    7km from you</h3>
+                </li>
+                <li>
+                    <img src="./img/h.jpg" alt="h">
+                    <h3>Hwang Hyunjin<br>
+                    2km from you</h3>
+                </li>
+            </ul>
+            </div>
+        </div>
+
+</body>
+</html>

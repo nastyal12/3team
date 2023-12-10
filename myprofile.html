@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <style>
+* {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px; /* Increased font size */
+}
+.menu {
+    width: 300px;
+    margin: 5px auto;
+}
+.menu>li {
+    width: 100%;
+    float: left;
+    margin-top: 50%;
+    text-align: center;
+    background: #bf567d ;
+    line-height:50px;
+}
+.menu a {
+    color: #ffd5e0;
+}
+.submenu li {
+    line-height: 20px;
+    background: #bf567d ;
+    padding: 10px; /* Increased padding */
+}
+.submenu {
+    display: none;
+}
+.menu>li:hover .submenu {
+    display: block;
+    transition-duration: 1s;
+}
+.submenu li:hover {
+    background: #734652 ;
+}
+body {
+    color: #734652 ;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #ffd5e0;
+}
+.submenu img {
+    width: 70%;
+}
+header {
+            text-align: center;
+            color: #ffd5e0;
+            background-color: #bf567d;
+        }
+        header li{
+            list-style: none;
+            display: inline;
+        }
+        header a{color: #ffd5e0;}
+</style>
+</head>
+<body>
+    <header>
+        <h1>Love Connection</h1>
+            <div id="header">
+                <ul id="main_menu">
+                    <li><a href="html.html">|Home|</a></li>
+                    <li><a href="chat.html">|My Messages|</a></li>
+                    <li><a href="profile4.html">|User`s profile|</a></li>
+                </ul>
+            </div>
+    </header>
+<ul class="menu">
+<li>
+    <a href="#">ABOUT ME</a>
+    <ul class="submenu">
+    <li><a href="#">Name:Lee Ji Soo</a></li>
+    <li><a href="#">Age:24</a></li>
+    <li><a href="#">City:Seoul</a></li>
+    <li><a href="#">My hobbies:Reading books and drinking coffee</a></li>
+    <li><a href="#"></a></li>
+    </ul>
+</li>
+<li>
+    <a href="#">MY PHOTOS</a>
+    <ul class="submenu">
+    <li><a href="#"><img src="./img/momo5.jpg"></a></li>
+    <li><a href="#"><img src="./img/momo1.jpeg"></a></li>
+    <li><a href="#"><img src="./img/momo2.jpeg"></a></li>
+    <li><a href="#"><img src="./img/momo3.jpg"></a></li>
+    <li><a href="#"><img src="./img/momo4.jpg"></a></li>
+    
+    </ul>
+</li>
+<li>
+    <a href="#">SETTINGS</a>
+    <ul class="submenu">
+    <li><a href="#">Edit menu "ABOUT ME"</a></li>
+    <li><a href="#">Edit menu "MY PHOTOS"</a></li>
+    <li><a href="#">Delete profile</a></li>
+    </ul>
+</li>
+</ul>
+</body>
+</html>

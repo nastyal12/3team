@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+        li{
+            list-style: none;
+            font-size: 15px;
+
+        }
+        #box{
+            width: 100%;
+            height: 1000px;
+        }
+        #profile {
+            width: 350px;
+            height: 80px;
+            float: left;
+            padding: 15px 0 0 0;
+            background: #ffd5e0;
+            display: flex;
+            position: relative;
+        }
+        .bar {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #fff; 
+        }
+
+        #profile_img img{
+            margin: 10px 0 0 5px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            overflow: hidden;
+            object-fit: cover;
+        }
+        #name {
+            font-size: 30px;
+            font-weight: bold;
+            color: white;
+            float: left;
+            padding: 10px 0 0 20px;
+        }
+        #menu {
+
+           display: flex;
+           padding: 15px 0 0 110px;
+           width: 100px;
+           height: 40px;
+           gap: 10px;
+        }
+        #conversation_list{    
+            width: 350px;  
+            height: 800px; 
+            padding: 90px 0 0 10px;
+            font-size: 15px;
+            color: white;
+            background-color: #bf567d;
+        }
+        #conversation_list ul {
+            width: 330px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: #ffd5e0; /* Цвет фона выделенного чата */
+            /* border-radius: 5px; Закругление углов */
+            margin-bottom: 10px; /* Расстояние между чатами */
+        }
+
+        #conversation_list ul:hover {
+            background-color: #bf567d; 
+        }
+
+        #conversation_list img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        overflow: hidden;
+        object-fit: cover;
+        margin-right: 10px;
+        }
+        #conversation_list div {
+                    flex: 1;
+                }
+
+
+        #conversation_list p {
+            font-size: 20px;
+        }
+        #message {
+                    width: 750px;
+                    height: 800px;
+                    float: left;
+                    background-color: #ffd5e0;
+                    margin-left: 350px;
+                    position: relative;
+                    top: -800px;            
+                }
+        .user-info{
+            padding-top: 20px;
+            display: flex;  
+            font-size: 30px;
+            color: #734652;
+            position: relative;
+            margin-bottom: 0;
+            padding-left: 10px;
+
+        }
+        .user-info img{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            overflow: hidden;
+            object-fit: cover;
+            margin-bottom: 15px;
+            margin-right: 10px;
+            left: 10px;
+
+        }
+        .user-info  .bar {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #734652;
+        }
+
+        .message {
+            width: 730px;
+            height: 50px;
+            position: relative;
+            left: 10px;
+            border: 1px solid #39252a;
+            padding: 10px;
+            margin-bottom: 10px;
+            font-size: 20px;
+            color: #734652;
+            margin-top: 20px;           
+        }
+        form {
+            left: 5px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;       
+        }
+        input[type="text"] {
+            flex: 1;
+            padding: 10px;
+        }
+        input[type="submit"] {
+            background-color: #bf567d;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+
+        header {
+            text-align: center;
+            padding: 7px;
+            color: #ffd5e0;
+            background-color: #bf567d;
+        }
+        header li{
+            list-style: none;
+            display: inline;
+        }
+        header a{
+            color:#ffd5e0
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Love Connection</h1>
+            <div id="header_1">
+                <ul id="main_menu">
+                    <li><a href="html.html">|Home|</a></li>
+                    <li><a href="myprofile.html">|My Profile|</a></li> 
+                    <li><a href="user.html">|User`s profile|</a></li>
+
+                </ul>
+            </div>
+    </header>
+    <div id="box">
+        <div id="profile">
+            <div class="bar"></div>
+           <div id="profile_img"><img src="./img/momo5.jpg"></div>
+           <div id="name">Name</div>
+           <div id="menu">
+              <img src="./img/guard.png" alt="Shield icon">
+              <img src="./img/sf.png" alt="Bars icon">
+            </div>
+        </div>
+        <div id="conversation_list">
+            <ul>
+                <li><img src="./img/ms2.png" alt="User image"></li>
+            <div>
+            <p><strong>Byun Baekhyun</strong></p>
+            <p>Last Message</p>
+            </div>
+            </ul>
+            <ul>
+                <li><img src="./img/c.jpg" alt="User image"></li>
+                <div>
+                    <p><strong>Bang Christopher</strong></p>
+                    <p>Last Message</p>
+                </div>
+
+            </ul>
+            <ul>
+                <li><img src="./img/j.jpg" alt="User image"></li>
+                <div>
+                    <p><strong>Jeon Jungkook</strong></p>
+                    <p>Last Message</p>
+                </div>
+
+            </ul>
+            <ul>
+                <li><img src="./img/y.jpg" alt="User image"></li>
+                <div>
+                    <p><strong>Min Yoongi</strong></p>
+                    <p>Last Message</p>
+                </div>
+
+            </ul>
+        </div>
+        <div id="message">
+            <div class="user-info">
+                <img src="./img/Subin.jpg" alt="Your Name">Choi Subin
+            </div>
+
+            <div class="message">
+                <strong>User1:</strong> Hi, how are you?
+            </div>
+
+            <div class="message">
+                <strong>You:</strong> I'm good, thanks! How about you?
+            </div>
+            <form>
+                <input type="text" placeholder="Type your message…">
+                <input type="submit" value="send">
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
